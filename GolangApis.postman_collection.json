@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "8fecd4b8-867c-41ee-8c9c-9ede6350111f",
+    "name": "PythonWebApp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "29265529"
+  },
+  "item": [
+    {
+      "name": "getAllItems",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": "http://localhost:8080/api/v1/items"
+      },
+      "response": []
+    },
+    {
+      "name": "getItem",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "addItem",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 1,\n    \"name\": \"Noodles\",\n    \"price\": 100\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:8080/api/v1/item"
+      },
+      "response": []
+    },
+    {
+      "name": "updateItem",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 2,\n    \"name\": \"Pizza\",\n    \"price\": 2500\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:8080/api/v1/item/2"
+      },
+      "response": []
+    },
+    {
+      "name": "deleteItem",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/api/v1/item/2"
+      },
+      "response": []
+    }
+  ]
+}
